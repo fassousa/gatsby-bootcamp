@@ -24,24 +24,27 @@ const Header = () => {
           {data.site.siteMetadata.title}
         </Link>
       </h1>
-      <nav>
+      <nav className={headerStyles.grid}>
         <ul className={headerStyles.navList}>
-          <li>
-            <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
-              to="/"
-            >
-              Home
-            </Link>
-          </li>
+          <div className={headerStyles.home}>
+            <li>
+              <Link
+                className={headerStyles.navItem}
+                activeClassName={headerStyles.activeNavItem}
+                to="/"
+              >
+                Home
+              </Link>
+            </li>
+          </div>
+
           <li>
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
               to="/blog"
             >
-              Blog
+              Serviços
             </Link>
           </li>
           <li>
@@ -50,7 +53,7 @@ const Header = () => {
               activeClassName={headerStyles.activeNavItem}
               to="/about"
             >
-              About
+              Nossa Equipe
             </Link>
           </li>
           <li>
@@ -59,7 +62,43 @@ const Header = () => {
               activeClassName={headerStyles.activeNavItem}
               to="/contact"
             >
-              Contact
+              PT
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              activeClassName={headerStyles.activeNavItem}
+              to="/contact"
+            >
+              Portfólio
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              activeClassName={headerStyles.activeNavItem}
+              to="/contact"
+            >
+              Toca do Mouse
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              activeClassName={headerStyles.activeNavItem}
+              to="/contact"
+            >
+              Contato
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              activeClassName={headerStyles.activeNavItem}
+              to="/contact"
+            >
+              EN
             </Link>
           </li>
         </ul>

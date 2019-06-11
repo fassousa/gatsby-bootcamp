@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Full-Stack Gatsby Bootcamp",
+    title: "Toca do Mouse",
     author: "Fagnner Sousa",
   },
   plugins: [
